@@ -1,0 +1,38 @@
+<app-container>
+  <header>
+    <!--Logo cabeçalho-->
+     <section class="cabecalho-link">
+      <img src="assets/logo.png" alt="">
+    </section>
+
+    <!--Imagem do cabeçalho-->
+    <section class="cabecalho-login">
+      <img src="assets/perfil-contato.png">
+    </section>
+
+    <h1>Acessar Conta</h1>
+  </header>
+
+  <app-separador></app-separador>
+
+  <div class="card">
+    <section class="inputs-login">
+      <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email">
+
+      <label for="senha">Senha</label>
+        <input type="senha" id="senha" placeholder="Senha">
+    </section>
+
+    <div class="lembrar-login">
+      <input type="checkbox" id="lembrar">
+      <label for="lembrar">Lembrar-me</label>
+    </div>
+
+    <section class="botoes-login">
+      <button class="entrar-login" routerLink="/lista-contatos">Entrar</button>
+      <button class="esqueceu-senha">Esqueci minha senha</button>
+    </section>
+
+    </div>
+</app-container>

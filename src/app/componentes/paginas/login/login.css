@@ -1,0 +1,97 @@
+header .cabecalho-link {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header .cabecalho-login {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 32px;
+}
+
+h1 {
+font-family: 'Montserrat';
+font-size: 26px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0px;
+text-align: center;
+color: #0D6EFD;
+margin: 12px 0;
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 20px rgba(0, 66, 165, 0.15);
+  width: 400px;              /* menor largura */
+  max-width: 90%;
+  margin: 100px auto;        /* centralizado */
+  padding: 20px 20px;        /* padding mais proporcional */
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.botoes-login{
+  display: flex;
+  flex-direction: column; /* coloca um embaixo do outro */
+  gap: 10px;
+}
+
+.entrar-login {
+font-family: 'Montserrat';
+color:#FFFFFF;
+background-color: #0D6EFD;
+cursor: pointer;
+border: none;
+border-radius: 7px;
+font-size: 18px;
+padding: 10px;
+margin-top: 15px;
+}
+
+.esqueceu-senha {
+  font-family: 'Montserrat';
+  background: none;
+  border: none;
+  font-size: 17px;
+  padding: 13px;
+  color:#0D6EFD;
+  margin-bottom: -5px;
+}
+
+#email, #senha {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  width: 100%;
+  margin: 8px 0 12px 0;
+  padding: 6px 12px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+label {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #0D6EFD;
+}
+
+.lembrar-login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding-top: 8px;
+}
+
+#lembrar {
+  accent-color: #0D6EFD;
+}
+
