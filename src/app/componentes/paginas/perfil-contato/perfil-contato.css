@@ -1,0 +1,48 @@
+header .cabecalho-link {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.voltar {
+  background: none;
+  border: none;
+}
+
+.voltar span{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  margin-left: 10px;
+  position: relative;
+  top: -3px;
+  color: #0D6EFD;
+}
+
+header .cabecalho-login {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 32px;
+margin-bottom: -15px;
+}
+
+h1 {
+font-family: 'Montserrat';
+font-size: 26px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0px;
+text-align: center;
+color: #0D6EFD;
+margin: 12px 0;
+margin-bottom: 20px;
+}
+
+.card {
+  width: 320px;
+  height: 400px;
+  background-color: #c6d4e9;
+  border-radius: 16px;
+  margin: 20px auto; /* centraliza horizontalmente */
+}
