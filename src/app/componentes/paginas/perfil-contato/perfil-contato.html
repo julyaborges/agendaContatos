@@ -25,9 +25,48 @@
 
   <app-separador></app-separador>
 
-  <div class="card">
+  <div class="card"> <!--Card principal-->
 
-    
+    <div class="topo-perfil"> <!--Topo do card principal-->
+      <div class="imagem-perfil">
+        <img src="assets/mulher.jpg" alt="">
+      </div>
+      <h1 class="nome-perfil">Maria Souza</h1>
+    </div>
+
+    <app-separador tipo="card-titulo"></app-separador> <!--Separador-->
+
+    <div class="info-perfil"> <!--Informações do Perfil-->
+
+      <div class="infos"> <!--Informação Número-->
+        <img src="assets/call.png" alt="">
+        <span class="label">Número</span>
+        <span class="valor">+55 47 991767324</span>
+      </div>
+
+      <div class="infos"> <!--Informação Email-->
+        <span class="label">Email</span>
+        <span class="valor">borgesanajulya@gmail.com</span>
+      </div>
+
+      <div class="infos"> <!--Informação Nascimento-->
+        <span class="label">Data de Nascimento</span>
+        <span class="valor">29/06/2006</span>
+      </div>
+
+      <div class="infos"> <!--Informação Redes sociais-->
+        <span class="label">Redes Sociais</span>
+        <span class="valor"><a href="">linkedin.com/mariasouza</a></span>
+        <span class="valor"><a href="">instagram.com/mariasouza</a></span>
+      </div>
+
+    </div>
+
+    <section class="botoes-perfil">
+      <button class="excluir-contato" type="button">Excluir Contato</button>
+      <button class="editar-contato" type="submit">Editar</button>
+    </section>
+
   </div>
 
 </app-container>

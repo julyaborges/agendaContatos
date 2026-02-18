@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-separador',
-  imports: [],
+  imports: [ CommonModule],
   templateUrl: './separador.html',
   styleUrl: './separador.css',
 })
 export class Separador {
+
+   @Input() tipo: string = '';
 
 }

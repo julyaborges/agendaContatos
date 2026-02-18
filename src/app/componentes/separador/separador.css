@@ -9,3 +9,9 @@ h2 {
   text-transform: uppercase;
   border-bottom: 1px solid #0d6efd;
 }
+
+.card-titulo {
+  font-size: 30px;
+  height: -2px;         /* linha mais fina */
+  background-color: #0d6efd;
+}
