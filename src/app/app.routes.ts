@@ -3,6 +3,7 @@ import { FormularioContato } from './componentes/paginas/formulario-contato/form
 import { ListaContatos } from './componentes/paginas/lista-contatos/lista-contatos';
 import { Login } from './componentes/paginas/login/login';
 import { PerfilContato } from './componentes/paginas/perfil-contato/perfil-contato';
+import { LoginNovo } from './componentes/paginas/login-novo/login-novo';
 
 
 export const routes: Routes = [
@@ -21,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'perfil-contato',
     component: PerfilContato
+  },
+  {
+    path: 'login-novo',
+    component: LoginNovo
   },
   {
     path: "",

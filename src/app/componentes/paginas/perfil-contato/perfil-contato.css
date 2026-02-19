@@ -138,3 +138,14 @@ color: #0D6EFD;
 .infos span {
   display: block;
 }
+
+.telefone-infos {
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 3px; /* espaço entre o ícone e o texto */
+}
+
+.telefone-infos img {
+  height: 25px;
+}
+
