@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Container } from '../../container/container';
 import { Cabecalho } from '../../cabecalho/cabecalho';
 import { Separador } from '../../separador/separador';
@@ -6,17 +6,9 @@ import { Contato } from '../../contato/contato';
 import { FormsModule } from '@angular/forms';
 import { FormularioContato } from '../formulario-contato/formulario-contato';
 import { CommonModule } from '@angular/common';
-
-
-// representar nossos contatos
-interface IContato{
-  id: Number
-  nome: string
-  telefone: string
-}
-
-import agenda from '../../../agenda.json'
 import { RouterLink } from '@angular/router';
+import { ContatoService } from '../../../services/contato-service';
+import { ContatoInterface } from '../../contato/contato-interface';
 
 @Component({
   selector: 'app-lista-contatos',
@@ -24,20 +16,30 @@ import { RouterLink } from '@angular/router';
   templateUrl: './lista-contatos.html',
   styleUrl: './lista-contatos.css',
 })
-export class ListaContatos {
+export class ListaContatos implements OnInit {
+
    alfabeto: string = 'abcdefghijklmnopqrstuvwxyz';
 
-  contatos: IContato[] = agenda;
+  contatos: ContatoInterface[] = [];
 
   filtroPorTexto: string = '';
 
-  filtrarContatosPorLetraInicial(letra:string): IContato[]{
+  constructor(private contatoService: ContatoService){
+
+  }
+
+  ngOnInit(){
+      this.contatos = this.contatoService.obterContatos();
+  }
+
+
+  filtrarContatosPorLetraInicial(letra:string): ContatoInterface[]{
     return this.filtrarContatosPorTexto().filter( contato => {
       return contato.nome.toLowerCase().startsWith(letra)
     })
   }
 
-  filtrarContatosPorTexto(): IContato[] {
+  filtrarContatosPorTexto(): ContatoInterface[] {
     if(!this.filtroPorTexto){
       return this.contatos
     }
@@ -53,5 +55,5 @@ export class ListaContatos {
     .normalize('NFD') // Separa a letra do acento
     .replace(/[\u0300-\u036f]/g, '') // Remove os acentos da string
     .toLowerCase(); // Converte tudo para minúsculo
-}
+  }
 }
